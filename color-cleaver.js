@@ -7,8 +7,12 @@ const getInput = require("./get-input.js");
 // Your code here!
 
 
-const firstColor = getInput(1);
-const secondColor = getInput(2);
+let firstColor = getInput(1);
+firstColor = firstColor.toLowerCase();
+
+let secondColor = getInput(2);
+if (secondColor !== undefined) {
+secondColor = secondColor.toLowerCase();}
 
 if (firstColor === undefined) {
     console.log("We need atleast one color");
